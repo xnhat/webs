@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <style>
+        *{
+            font-family: Verdana;
+        }
+        * {box-sizing: border-box;}
+        .header {
+            background-color: aliceblue;
+            display: block;
+            padding: 8px;
+            width: 100%;
+            text-align: center;
+        }
+        .menu{
+            background-color: aliceblue;
+            width: 20%;
+            display: block;
+            text-align: left;
+            padding: 8px;
+            border: 1px solid black;
+            font-size: 15px;
+        }
+        .content{
+            font-size: 15px;
+            font-family: Verdana;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-radius: 3px;
+        }
+        .classdiv{
+            background-color: rgb(122, 151, 176);
+            border: 2px inset black;
+            padding: 30px;
+            width: auto;
+
+        }
+    </style>
+    <title>HTML</title>
+    <link rel="icon" type="image/x-icon" href="/W3Schools_logo.svg.png">
+</head>
+<body>
+    <header>
+        <p class="header">HTML -> <a href="CSS.html" target="_blank">CSS</a></p>
+    </header>
+
+    <p class="menu">Part 1: Elements</p>
+        <p class="content">
+            <h1>This is h1</h1>
+            <h2>This is h2</h2>
+            <h3>This is h3</h3>
+            <h4>This is h4</h4>
+            <h5>This is h5</h5>
+            <h6>This is h6</h6>
+        </p>
+    <p class="menu">Part 2: Link</p>
+        <p class="content">
+            <a href="https://www.w3schools.com" target="_blank">W3schools</a>
+        </p>
+
+    <p class="menu">Part 3: Image</p>
+        <p class="content">
+            <img src="W3Schools_logo.svg.png" alt="W3Schools_logo" width="100" height="100">
+        </p>
+
+    <p class="menu">Part 4: &lt;br&gt;</p>
+        <p class="content">
+            Use &lt;br&gt; if you want a line break (a new line) without starting a new paragraph <br>
+            This is <br> a sentence
+        </p>
+
+    <p class="menu">Part 5: &lt;hr&gt;</p>
+        <p class="content">
+            The &lt;hr&gt; element is used to separate content (or define a change) in an HTML page <hr>
+            This is <hr> a sentence
+        </p>
+
+    <p class="menu">Part 6: &lt;pre&gt;</p>
+        <p class="content">
+        The text inside a &lt;pre&gt; element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks
+<pre>
+This is a page
+This is a sentence
+</pre>
+        </p>
+
+    <p class="menu">Part 7: Size</p>
+        <p class="content">
+            &lt;b&gt; - bold text: <b>word</b> <br>
+            &lt;strong&gt; - important text: <strong>word</strong> <br>
+            &lt;i&gt; - italic text: <i>word</i> <br>
+            &lt;em&gt; - emphasized text: <em>word</em> <br>
+            &lt;mark&gt; - marked text: <mark>word</mark> <br>
+            &lt;small&gt; - smaller text: <small>word</small> <br>
+            &lt;del&gt; - deleted text: <del>word</del> <br>
+            &lt;ins&gt; - inserted text: <ins>word</ins> <br>
+            &lt;sub&gt; - subscript text: x<sub>word</sub> <br>
+            &lt;sup&gt; - superscript text: x<sup>word</sup> <br>
+        </p>
+
+    <p class="menu">Part 8: Target</p>
+        <p class="content">
+            The target attribute specifies where to open the linked document <br>
+            <b>_self</b> - opens the document in the same window/tab as it was clicked: <a href="https://www.w3schools.com/" target="_self">Visit W3Schools!</a> <br>
+            <b>_blank</b> - opens the document in a new window or tab: <a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a> <br>
+            <b>_parent</b> - opens the document in the parent frame <a href="https://www.w3schools.com/" target="_parent">Visit W3Schools!</a> <br>
+            <b>_top</b> - opens the document in the full body of the window: <a href="https://www.w3schools.com/" target="_top">Visit W3Schools!</a> <br>
+
+        </p>
+    
+    <p class="menu">Part 9: Image link</p>
+        <a class="content" href="https://www.w3schools.com/" target="_blank">
+            <img src="W3Schools_logo.svg.png" alt="W3Schools" style="height: 100px;width: 100px;">
+        </a>
+
+    <p class="menu">Part 10: Mail</p>
+        <p class="content">
+            <a href="mailto:nxn101106@gmail.com" target="_blank">Send email</a>
+        </p>
+
+    <p class="menu">Part 11: Picture</p>
+        <picture>
+            <source media="(min-width: 1200px)" srcset="cat_640x637.jpg">
+            <source media="(min-width: 800px)" srcset="cat_240x400.jpg">
+            <img src="cat_240x400.jpg" style="width: auto;">
+        </picture>   
+    
+    <p class="menu">Part 12: Table</p>
+        <table class="content">
+            <tr>
+                <th>Name</th>
+                <th>Soldier 1</th>
+                <th>Soldier 2</th>
+            </tr>
+            <tr>
+                <td>Misson</td>
+                <td>Assist</td>
+                <td>Assist</td>
+            </tr>
+            <tr>
+                <td>Age</td>
+                <td>44</td>
+                <td>33</td>
+            </tr>
+        </table>
+    
+    <p class="menu">Part 13: List</p>
+        <p class="content">
+            <ul>
+                <li>Target 1</li>
+                <li>Target 2</li>
+                <li>Target 3</li>
+            </ul>
+        </p>
+
+    <p class="menu">Part 14: Span element</p>
+        <p class="content">
+            <span style="color: aqua;font-weight: bold;">This </span>
+            <span style="color: red;font-weight: bold;">is </span>
+            <span style="color: blueviolet;font-weight: bold;">a </span>
+            <span style="color: greenyellow;font-weight: bold;">sentence</span>
+        </p>
+    
+    <p class="menu">Part 15: Div element</p>
+        <div class="classdiv">
+            <p>This is a sentence</p>
+        </div>
+
+    <p class="menu">Part 16: Input</p>
+        <form class="content">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" value="Please input your name"><br>
+            <input type="submit" value="submit">
+        </form>
+
+    <p class="menu">Part 17: Radio buttons</p>
+        <form class="content">
+            <input type="Radio" id="cat" name="animal" value="cat">
+                <label for="cat">Cat</label><br>
+        </form>
+        <form class="content">
+            <input type="Radio" id="dog" name="animal" value="dog">
+                <label for="dog">Dog</label><br>
+        </form>
+        <form class="content">
+            <input type="Radio" id="bird" name="animal" value="birf">
+                <label for="bird">Bird</label><br>
+        </form>
+
+    <p class="menu">Part 18: Checkbox</p>
+        <form class="content">
+            <input type="checkbox" id="cat" name="animal" value="cat">
+                <label for="cat">Cat</label>
+        </form>
+        <form class="content">
+            <input type="checkbox" id="dog" name="animal" value="dog">
+            <label for="dog">Dog</label><br>
+        </form>
+        <form class="content">
+            <input type="checkbox" id="bird" name="animal" value="birf">
+            <label for="bird">Bird</label><br>
+        </form>
+
+    <p class="menu">Part 19: Select</p>
+        <form class="content">
+            <label for="cars">Choose a car:</label><br>
+            <select id="cars" name="cars">
+                <option value="Chervolet">Chervolet</option>
+                <option value="Mercedes">Mercedes</option>
+                <option value="Jaguar">Jaguar</option>
+            </select>
+        </form>
+
+    <p class="menu">Part 20: Speacial Characters</p>
+        <div class="classdiv">
+            &cent;, &pound;, &forall;, &spades;, &reg;,...
+        </div>
+
+</body>
+</html>
